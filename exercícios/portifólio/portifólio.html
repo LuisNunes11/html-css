@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Luis</title>
+</head>
+<style>
+    header{
+        display:flex;
+        position:absolute;
+        right: 20px;
+    }
+    h1{color:white;
+    padding:10px;
+    font-size: 12px;
+    }
+
+    /**HOME PAGE**/
+    .botao1 {
+        text-decoration:none;
+        color:white;
+        padding:10px 5px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 50px;
+        }
+        .home1{
+            position: absolute;
+            background-color:#F4FFE0;
+            top: 40px;
+            left: 0;
+            right: 0;
+        width: 100%;
+        height: 1700px;
+        }
+        .home{          
+            background-color:#3498db;
+            width:100%;
+            height:40px;
+            position:absolute;
+            right:0;
+            top:0;
+            left:0;
+        }
+        .botao2 {
+        border:2px solid #3498DB;
+        border-radius: 6px;
+        background-color: #D9D9D9;
+        padding: 8px 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration:none;
+        font-size: 20px;
+        position: absolute;
+        width: 201px;
+        height: 81px;
+        left: 124px;
+        top: 400px;
+        
+    }
+    .botao2 a{
+        text-decoration: none;
+        color:white;
+    }
+        .botao3 {
+        border:2px solid #3498DB;
+        border-style: solid;
+        border-radius: 6px;
+        background-color: #D9D9D9;
+        padding: 8px 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration:none;
+        font-size: 20px;
+        position: absolute;
+        width: 150px;
+        height: 81px;
+        left: 513px;
+        top: 400px;
+        }
+        .botao3 a{
+        text-decoration: none;
+        color:white;
+        }
+            .botao4 {
+            border: 4px solid #000;
+            background-color: #3498DB;
+            border-style: solid;
+            border-radius: 6px;
+            padding: 19px 34px;
+            position: absolute;
+            left: 78px;
+            right: 766px;
+            top: 150px;
+            width: 560px;
+            height: 150px;
+            font-size: 43px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            text-align:center;
+            }
+            .imagem {
+            border: 4px solid #3498DB;
+            border-radius: 6px;
+            position:absolute;
+            width: 340px;
+            height: 400px;
+            right: 100px;
+            top: 127px;
+            }
+            .imagem1 {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            left: 10px;
+            top: 03px;
+            }
+
+        .botao5{ /*botão SKILLS*/
+        text-decoration:none;
+        color:white;
+        padding:10px 5px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 50px;
+        }
+
+        .botao6{ /*BOTÃO SOBRE*/
+        text-decoration:none;
+        color:white;
+        padding:10px 5px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 50px;  
+        scroll-behavior: smooth;
+        }
+
+        
+
+    /**SOBRE**/
+    
+    .sobre { /*ÁREA SOBRE*/
+        position: absolute;
+        width: min-content 1ch;
+        top: 600px;
+        left: 80px;
+    }
+    .texto-sobre1{ /*INFORMAÇÕES SOBRE*/
+        color:#000;
+        text-align:justify;
+        position: absolute;
+        width: 710px;
+        height: 90px;
+        font-size: 15px;
+        background-color: #3498DB;
+        border: 4px solid #000;
+        border-radius: 6px;
+        top: 170px;
+        left: 177px;
+    }
+    .imagem2 {
+            border: 4px solid #000;
+            background-color: #3498DB;
+            border-radius: 6px;
+            padding: 19px 34px;
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        height: 40px;
+        width: 105px;
+    }
+
+
+    /*SKILLS*/
+    .skills1{ /*botao skiils*/
+        border: 4px solid black;
+        border-radius: 6px;
+        position: absolute;
+        top: 10px;
+        width: 120px;
+        height: 55px;
+    }
+    .skills{ /*área*/
+        position: absolute;
+        top: 1100px;
+        left: 50px;
+
+        color: black;
+    }
+    .textoSkills{
+        position: absolute;
+        text-align: justify;
+        top: 100px;
+        left: 60px;
+        color: #000;
+        font-size: 22px;
+        width: 900px;
+        height: 110px;
+    }
+    .quadroSkills{
+        position: absolute;
+        top: 120px;
+        background-color: #3498DB;
+        border: 4px solid black;
+        border-radius: 6px;
+        left: 40px;
+        height: 120px;
+        width: 930px;
+    }
+
+    /**CONTATOS**/
+    .mensagem{ /*ÁREA CONTATOS*/
+        position: absolute;
+        background-color: #3f3f3f;    
+        top:1700px;
+        left:0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .imagem3{ /*título mensagem*/
+        padding: 19px 34px;
+        position: absolute;
+        top: 0px;
+        left:520px;
+        height: 55px;
+        width: 120px;
+    }
+    .botao7{ /*CONTATO 1*/
+        text-decoration:none;
+        color:white;
+        padding:10px 5px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 50px;
+        }
+        /*barra nome*/
+        .nome{
+            position: absolute;
+            top: 90px;
+            left: 114px;
+            width: 59px;
+            height: 18px;
+        }
+        .Barra-nome{
+            position: absolute;
+            top: 110px;
+            left: 96px;
+            right: 96px;
+            background-color: #ffff;
+            border: 4px solid #000;
+        }
+        /*barra e-mail*/
+        .email{
+            position: absolute;
+            height: 30px;
+            width: 60px;
+            top: 138px;
+            left: 114px;
+        }
+        .Barra-email{
+            position: absolute;
+            top: 170px;
+            right: 96px;
+            left: 96px;
+            background-color: #ffff;
+            border: 4px solid #000;
+        }
+        /*barra mensagem*/
+        .mensagem-1{
+            position: absolute;
+            height: 36px;
+            width: 70px;
+            top: 196px;
+            left: 114px; 
+        }
+        .Barra-mensagem{
+            position: absolute;
+            top: 236px;
+            right: 96px;
+            left: 96px;
+            height: 200px;
+            
+            background-color: #ffff;
+            border: 4px solid #000;  
+        }
+        .botaoMensagem1{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            border: 4px solid black;
+            border-radius: 6px;
+            position: absolute;
+            left: 578px;
+            top: 500px;
+        }
+</style>
+<body>
+    <section class="home1"> 
+        <h1> </h1> 
+    </section>
+<section class="home">
+    <header>
+            <a href="file:///C:/Users/Luis%20Henrique%20Nunes/OneDrive/Área%20de%20Trabalho/curso-de-HTML-CSS/html-css/exercícios/portifólio/portifólio.html" class="botao1">&#x2b50;HOME PAGE</a>
+            <a href="https://www.linkedin.com/in/luis-henrique-n-b61b1812b" class="botao1" target="_blank">&#x2b50;CURRICULUM</a>
+            <a href="#sobre" class="botao6">&#x2b50;SOBRE</a>
+            <a href="#skills" class="botao5">&#x2b50;SKILLS</a>
+            <a href="#mensagem" class="botao7">&#x2b50;CONTATO</a>
+        </header>
+    <button type="button" class="botao2"><a href="curriculo/currículo Luis.pdf"><strong>DOWNLOAD CV</strong></a></button>
+    <button type="button" class="botao3"><a href="#mensagem"><strong>CONTATOS</strong></a>
+    </button>
+</section> 
+    <section class="sobre" id="sobre">
+        <div id="#sobre"></div>
+        <img src="SOBRE.png" class="imagem2">
+        <h1 class="texto-sobre1"><p>Eu sou o Luis, sou Formado em Engenharia Mecânica no Centro Universitário São Judas - Campus UNIMONTE. Tenho 23 anos, moro em Vicente de Carvalho - Guarujá/SP. Aos meus 20 anos, trabalhei em uma escola estadual na Bertioga, onde exerci a função de Agente de Organização Escolar (AOE), durante o ano letivo realizai a função cimilar a de um inspetor de escola e durante as férias e recesso escolar realizava a função cimilar ao antigo escriturário de escola.</p></h1>
+    </section>    
+<section class="skills" id="skills">
+    <div id="#skills"></div>
+    <h1 class="quadroSkills"> </h1>
+    <img src="SKILLS.png" class="skills1">
+    <h1 class="textoSkills"><p>Minhas abilidades são trabalhar em equipe com bastante facilidade, próatividade, dedicação, pontualidade e honestidade são parte de meu carater e honra, além da confiança, gosto de aprender coisas novas e em um serviço caso não saiba como resolve-lo irei procurar maneiras e aprender com as pessoas, assim caso aconteça uma situação similar consiguirei resolver.</p></h1>
+</section>
+        <section class="mensagem" id="mensagem">
+        <div id="#mensagem"></div>
+        <img src="MENSAGEM.png" class="imagem3">
+            <div>
+               <img src="Nome.png" class="nome">
+                <input type="text" nome="nome" class=Barra-nome>
+            </div>
+            <div>
+                <img src="EMAIL.png" class="email">
+                <input type="email" nome="email" class="Barra-email">
+            </div>
+            <div>
+                <img src="MENSAGEM.png" class="mensagem-1">
+                <textarea type="text" nome="text" top:400 class="Barra-mensagem"></textarea>
+            </div>
+        <a href="#" Class="botaoMensagem1"><strong>ENVIAR</strong></a>
+    </section>
+<botton><img src="LOGO.png" class="botao4">
+<img src="face - teste.png" class="imagem1">
+</botton>
+<img src="FOTO TESTE.png" class="imagem">
+</body>
+</html>

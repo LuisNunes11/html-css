@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon 2.png">
+    <title>Cardápio Tomodati</title>
+</head>
+<style>
+/*botões*/
+
+/*INÍCIO*/
+
+.botao-inicio{
+position: absolute;
+top: 55px;
+right: 1px;
+text-decoration: none;
+color: black;
+font-size: 17px;
+font-family: monospace;
+right: 170px;
+
+}
+.botao-sobre{
+position: absolute;
+top: 55px;
+right: 95px;
+text-decoration: none;
+color: black;
+font-size: 17px;
+font-family: monospace;
+}
+
+.botao-insta{ /*botão instagram*/
+position:absolute;
+top: 45px;
+padding: 2px -2px;
+right: 40px;
+}
+.botao-face{ /*botão facebook*/
+position:absolute;
+top: 45px;
+right: 10px;
+padding: 2px -2px;
+}
+.botao-logo{
+    position: absolute;
+    padding: 10px 30px;
+    width: 100px;
+    height: 100px;
+}
+/**********************************************/
+
+ /*HOME PAGE*/
+ .home-topo{
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 100%;
+height: 120px;
+padding: 0;
+margin: 0;
+background-color:white;
+}
+/*fundo page*/
+.fundo-home-page{
+position: absolute;
+left: 0;
+top: 120px;
+width: 100%;
+height: 1150px;
+background-color: firebrick;
+}
+
+/*****************************************/
+
+/*cardápio*/
+.cardapio{
+    position: absolute;
+    top: 20px;
+    left: 525px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.l1{
+position: absolute;
+top: 80px;
+width: 2px;
+height: 1000px;
+left: 345px;
+background-color: black;
+}
+.l2{
+    position: absolute;
+top: 80px;
+width: 2px;
+height: 1000px;
+left: 780px;
+background-color: black;
+}
+/********************************************/
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    height: 1100px
+}
+
+/*imagem 1*/
+.figura1{
+    position: absolute;
+    top: 100px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-sunomono{
+    position: absolute;
+    top: 190px;
+    left: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+    
+/*imagem 2*/
+.figura2{
+    position: absolute;
+    top: 300px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+
+.texto-hot-roll{
+    position: absolute;
+    top: 390px;
+    left: 75px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+/*imagem 3*/
+.figura3{
+    position: absolute;
+    top: 500px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-shimeji{
+    position: absolute;
+    top: 590px;
+    left: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+/*imagem 4*/
+.figura4{
+    position: absolute;
+    top: 700px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-ceviche{
+    position: absolute;
+    top: 790px;
+    left: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+/*imagem 5*/
+.figura5{
+    position: absolute;
+    top: 900px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-robata{
+    position: absolute;
+    top: 990px;
+    left: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+/*meio*/
+.meio{
+    position: absolute;
+    width: 460px;
+    height: 1100px;
+    left: 345px;
+    top:0px;
+}
+/*imagem 6*/
+.figura6{
+    position: absolute;
+    top: 100px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-sushi{
+    position: absolute;
+    top: 200px;
+    left: 105px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-sushi{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 270px;
+    top: 80px;
+    text-align: left;
+    color: white;
+}
+/*imagem 7*/
+.figura7{
+    position: absolute;
+    top: 300px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+
+.texto-harumaki{
+    position: absolute;
+    top: 390px;
+    left: 65px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-harumaki{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 270px;
+    top: 280px;
+    text-align: left;
+    color: white;
+}
+/*imagem 8*/
+.figura8{
+    position: absolute;
+    top: 500px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-neguiri{
+    position: absolute;
+    top: 590px;
+    left: 85px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-neguiri{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 270px;
+    top: 470px;
+    text-align: center;
+    color: white;
+}
+/*imagem 9*/
+.figura9{
+    position: absolute;
+    top: 700px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-sashimi{
+    position: absolute;
+    top: 790px;
+    left: 90px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-sashimi{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 270px;
+    top: 670px;
+    text-align: left;
+    color: white;
+}
+/*imagem 10*/
+.figura10{
+    position: absolute;
+    top: 900px;
+    left: 52px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-carpaccio{
+    position: absolute;
+    top: 990px;
+    left: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-carpaccio{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 270px;
+    top: 870px;
+    text-align: center;
+    color: white;
+}
+
+
+/*direita*/
+.direita{
+    position: absolute;
+    width: 369px;
+    height: 1100px;
+    left: 784px;
+    top:0px;
+}
+/*imagem 11*/
+.figura11{
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-uramaki{
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-uramaki{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 260px;
+    top: 80px;
+    text-align: left;
+    color: white;
+}
+/*imagem 12*/
+.figura12{
+    position: absolute;
+    top: 300px;
+    left: 45px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+
+.texto-kappamaki{
+    position: absolute;
+    top: 390px;
+    left: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-kappamaki{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 260px;
+    top: 280px;
+    text-align: left;
+    color: white;
+}
+/*imagem 13*/
+.figura13{
+    position: absolute;
+    top: 500px;
+    left: 45px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-tekkamaki{
+    position: absolute;
+    top: 590px;
+    left: 45px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-tekkamaki{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 260px;
+    top: 470px;
+    text-align: center;
+    color: white;
+}
+/*imagem 14*/
+.figura14{
+    position: absolute;
+    top: 700px;
+    left: 45px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-joe{
+    position: absolute;
+    top: 790px;
+    left: 120px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-joe{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 260px;
+    top: 670px;
+    text-align: left;
+    color: white;
+}
+
+/*figura 15*/
+.figura15{
+    position: absolute;
+    top: 900px;
+    left: 45px;
+    width: 200px;
+    height: 100px;
+    border: 4px solid black;
+    border-radius: 6px;
+}
+.texto-temaki{
+    position: absolute;
+    top: 990px;
+    left: 80px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.variavel-temaki{
+    position: absolute;
+    text-shadow:2px 2px 2px black;
+    left: 260px;
+    top: 870px;
+    text-align: center;
+    color: white;
+}
+
+/*listas de variáveis*/
+
+.variavel1{
+    position: absolute;
+    left: -15px;
+    top: 55px;
+    width: 180px;
+    text-align: left;
+    color: white;
+}
+.variavel2{
+    position: absolute;
+    left: -15px;
+    top: 55px;
+    width: 180px;
+    text-align: left;
+    color: white;
+}
+.variavel3{
+    position: absolute;
+    left: -15px;
+    top: 55px;
+    width: 180px;
+    text-align: left;
+    color: white;
+}
+.variavel4{
+    position: absolute;
+    left: -15px;
+    top: 55px;
+    width: 180px;
+    text-align: left;
+    color: white;
+}
+.variavel5{
+    position: absolute;
+    left: -15px;
+    top: 55px;
+    width: 180px;
+    text-align: left;
+    color: white;
+}
+</style>
+<body>
+    <div class="home-topo">
+        <a href="teste-TOMODATI.html" class="botao-inicio">Início</a>
+        <a href="SOBRE-TOMODATI.html" class="botao-sobre">Sobre</a>
+        
+           <a href="teste-TOMODATI.html" class="botao-logo"><img src="logo tomodati.png" class="botao-logo"></a>
+           <a href="https://www.instagram.com/restaurantetomodati" class="botao-insta" target="_blank" rel="external"><img src="INSTA.png"></a>
+           <a href="https://www.facebook.com/restaurantetomodati" class="botao-face" target="_blank" rel="external"><img src="Facebook.png"></a>
+         <div class="fundo-home-page">
+            <hr class="l1">
+            <hr class="l2">
+            <div class="cardapio"><h1>CARDÁPIO</h1></div>
+
+        <div class="esquerda">
+                <img src="sunomono.png" class="figura1">
+                <div class="texto-sunomono"><h1>SUNOMONO</h1></div>
+                <img src="hot roll.png" class="figura2">
+                <div class="texto-hot-roll"><h1>HOT ROLL</h1></div>
+                <img src="shimeji.png" class="figura3">
+                <div class="texto-shimeji"><h1>SHIMEJI</h1></div>
+                <img src="ceviche.jpg" class="figura4">
+                <div class="texto-ceviche"><h1>CEVICHE</h1></div>
+                <img src="robata.png" class="figura5">
+                <div class="texto-robata"><h1>ROBATA</h1></div>
+        </div>
+
+        <div class="meio">        
+                <img src="sushi.png" class="figura6">
+                <div class="texto-sushi"><h1>SUSHI</h1></div>
+                <div class="variavel-sushi"><h1>TIPOS</h1>
+                <div class="variavel1">
+                <ul>
+                    <li>SALMÃO</li>
+                    <li>ATUM</li>
+                    <li>TILÁPIA</li>
+                </ul>
+                </div>
+                </div>
+                <img src="harumaki.png" class="figura7">
+                <div class="texto-harumaki"><h1>HARUMAKI</h1></div>
+                <div class="variavel-harumaki"><h1>TIPOS</h1>
+                <div class="variavel2">    
+                    <ul>
+                        <li>QUEIJO</li>
+                        <li>BANANA</li>
+                        <li>LEGUMES</li>
+                    </ul>
+                </div>
+                </div>
+                <img src="neguiri.png" class="figura8">
+                <div class="texto-neguiri"><h1>NEGUIRI</h1></div>
+                <div class="variavel-neguiri"><h1>TIPOS</h1>
+                <div class="variavel3"><ul><li>SALMÃO</li>
+                    <li>ATUM</li>
+                    <li>TILÁPIA C/ LIMÃO</li>
+                    <li>TILÁPIA S/ LIMÃO</li>
+                </ul>
+                </div>
+                </div>
+                <img src="sashimi.png" class="figura9">
+                <div class="texto-sashimi"><h1>SASHIMI</h1></div>
+                <div class="variavel-sashimi"><h1>TIPOS</h1>
+                <div class="variavel4">
+                    <ul>
+                        <li>SALMÃO</li>
+                        <li>ATUM</li>
+                        <li>TILÁPIA</li>
+                    </ul>
+                </div>
+                </div>
+                <img src="carpaccio.png" class="figura10">
+                <div class="texto-carpaccio"><h1>CARPACCIO</h1></div>
+                <div class="variavel-carpaccio"><h1>TIPOS</h1>
+                <div class="variavel5">
+                    <ul>
+                        <li>SALMÃO</li>
+                        <li>ATUM</li>
+                        <li>TILÁPIA C/ LIMÃO</li>
+                        <li>TILÁPIA S/ LIMÃO</li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+            <div class="direita">
+                <img src="uramaki.png" class="figura11">
+                <div class="texto-uramaki"><h1>URAMAKI</h1></div>
+                <div class="variavel-uramaki"><h1>TIPOS</h1>
+                    <div class="variavel1">
+                        <ul>
+                            <li>SALMÃO</li>
+                            <li>ATUM</li>
+                            <li>TILÁPIA</li>
+                        </ul>
+                </div>
+                </div>
+                <img src="kappamaki.png" class="figura12">
+                <div class="texto-kappamaki"><h1>KAPPAMAKI</h1></div>
+                <div class="variavel-kappamaki"><h1>TIPOS</h1>
+                <div class="variavel2">
+                    <ul>
+                            <li>SALMÃO</li>
+                            <li>ATUM</li>
+                            <li>TILÁPIA</li>
+                        </ul>
+                </div>
+                </div>
+                <img src="tekkamaki.png" class="figura13">
+                <div class="texto-tekkamaki"><h1>TEKKAMAKI</h1></div>
+                <div class="variavel-tekkamaki"><h1>TIPOS</h1>
+                    <div class="variavel3">
+                        <ul>
+                            <li>SALMÃO</li>
+                            <li>ATUM</li>
+                            <li>TILÁPIA</li>
+                        </ul>
+                    </div>
+                    </div>
+                <img src="joe.png" class="figura14">
+                <div class="texto-joe"><h1>JOE</h1></div>
+                <div class="variavel-joe"><h1>TIPOS</h1>
+                    <div class="variavel4">
+                        <ul>
+                            <li>FLAMBADO</li>
+                            <li>NÃO FLAMBADO</li>
+                        </ul>
+                    </div>
+                    </div>                
+                <img src="Temaki.png" class="figura15">
+                <div class="texto-temaki"><h1>TEMAKI</h1></div>
+                <div class="variavel-temaki"><h1>TIPOS</h1>
+                    <div class="variavel5">
+                        <ul>
+                            <li>FILADELFIA</li>
+                            <li>ATUM</li>
+                        </ul>
+                    </div>
+         </div> 
+</body>
+</html>
