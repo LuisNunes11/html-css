@@ -4,23 +4,352 @@
     margin: 0;
 }
 :root{
+    --cor0:white;
     --cor1: #2f3336;
     --cor-fundo: #FCFAF6;
     --cor-fundo-post: black;
     --cor2: #3498DB;
 }
-@media (min-width:480px) {
-   /*.nav{ style=transform:translateX(0px)} */
+@media (max-width:820px) {
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .logo-area{
+        width: 100%;
+        height: 55px;
+        background-color: var(--cor0);
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+        .logo{
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 150px;
+            height: 50px;
+        }
+    .b{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 200px;
+        height: 55px;
+    }
+    .a{
+        margin: 0px 10px 0px 10px;
+    }
+    section ul{
+        height: 100px;
+        width: 78%;
+        padding-left: 0px;
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+    }
+    .status-1{
+        display:flexbox;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background: linear-gradient( #FFCB52,#FF6C42,#4961CA);
+        margin: 25px 7px 0px 7px;
+    
+    }
+    section ul h1{
+        font-size: 10px;
+        text-align: center;
+    }
+    .status{
+        display:flexbox;
+        flex-direction: row;
+        width: 50px;
+        height: 50px;
+        min-height: 50px;
+        border-radius: 50%;
+        object-fit:cover;
+        margin: 3.5px 0px 0px 4px;
+        border: 4px solid #fff;
+    }
+    nav ul{ 
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        left: 0px;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        justify-content: center;
+        background-color: white;
+        border-top: 1px solid var(--cor1);
+        list-style: none;
+        padding-inline-start: 0;
+        margin: 0px;
+    }
+    nav ul li img:hover{
+        width: 40px;
+        scale: 1.1;
+        box-shadow: 1px 0px 6px 6px rgba(224, 241, 255);
+        border-radius: 50%;
+    } 
+    .botao1{
+        display: none;
+        width: 40px;
+        height: 40px;
+        padding: 5px; 
+        margin: 10px 0px 35px 20px;
+        object-fit: cover;
+    }
+    .botao{
+        width: 40px;
+        height: 40px;
+        padding: 5px; 
+        margin: 10px 7px 6px 20px;
+        object-fit: cover;
+    }
+    .botao2{
+        display: none;
+        width: 40px;
+        height: 40px;
+        padding: 5px; 
+        margin: 10px 7px 6px 20px;
+        object-fit: cover;
+    }
+    .botao3{
+        display: none;
+        width: 30px;
+        height: 30px;
+        padding: 5px; 
+        margin: 10px 7px 6px 20px;
+        object-fit: cover;
+    }
+    .botao-perfil{
+        width: 40px;
+        height: 40px;
+        padding: 5px; 
+        margin: 10px 7px 6px 20px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .section{
+        display: block;
+        left: 40px;
+        border-left: 2px solid black;
+    }
+    /********perfil********/
+    .conteudo{
+        display: flex;
+        flex-direction:row;
+        width: 86.74%;
+        margin:30px 62px 0px 105px;
+        height: auto;
+    }
+    .post{
+        display: flexbox;
+        text-align: left;
+        width: 640px;
+        height: auto;
+    }
+    .perfil{
+        display: none;
+        flex-direction:row;
+        width: 400px;
+        height: 60px;
+        font-size: 16px;
+        margin: 25px 0px 0px 10px;
+    }
+    .perfil1{
+        display: none;
+    width: 400px;
+    height: 60px;
+    }
+    .foto-perfil{
+        display: none;
+        align-items:self-end;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 0;
+    }
+    section div foto-perfil h1{
+        display: inline-block;
+        margin: 0;
+    }
+    .perfil-1{
+        width: 60px;
+        height: 50px;
+        margin-left: 60px;
+    
+    }
+    .perfil-2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 05px;
+        height: 50px;
+        justify-content: center;
+        width: 223.24px;
+    }
+    div .perfil-2 > a{
+        color: black;
+        font-weight: bold;
+    }
+    div .perfil-2 > p{
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .perfil-3{
+        display: block;
+        height: 40px;
+        text-align: right;
+        justify-content: right;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size:10px;
+    }
+    /********sugestões********/
+    .sugestoes{
+        display:none;
+        flex-direction: row;
+        height: 20px;
+        width: 400px;
+        margin-left: 15px;
+    }
+    .sugestoes-1{
+        display:none;
+        flex-direction: row;
+        height: 20px;
+        width: 260px;
+        margin-left: 55px;
+    }
+    .sugestoes-2{
+        display:none;
+        flex-direction:row;
+        height: 20px;
+        width: 80px;
+        /*margin-left: 15px;*/
+    }
+    .tipos-sugestoes{
+        display: none;
+        width: 400px;
+        height: 330px;
+        margin-top: 20px;
+    }
+    .foto-perfil-1{
+        display: none;
+        align-items:self-end;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        justify-items: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.306);
+    }
+    .sugestao-perfil{
+        display: none;
+        height: 50px;
+        display: flex;
+        margin:6px 0px 0px 15px;
+    }
+    /*******post********/
+    .perfil-post{
+        display: flex;
+        width: 480px;
+        height: 45px;
+    }
+    .perfil-post h1{
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .perfil-mago{
+        display: flex;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        border: 1px solid rgba(0, 0, 0, 0.306);
+
+    }
+    .conteudo-post{
+        margin: 10px 0px 5px 0px;
+        width: 480px;
+        height: 272px;
+        object-fit:contain;
+        background-color: var(--cor-fundo-post);
+    }
+    article{
+        display: flexbox;
+        margin: 10px 60px 0px 60px;
+        height: 450px;
+        border-bottom: 1px solid var(--cor1);
+    }
+    .interacao{
+        display: flex;
+        flex-direction: row;
+        width: 480px;
+        height: 32px;
+    }
+    .interacao-01{
+        width: 30px;
+        height: 30px;
+        margin: 0px 7px 0px 6px;
+    }
+    .interacao-02{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        margin: 0px 0px 0px 164px;
+    }
+    article div .interacao-01 img:hover{
+        width: 30px;
+        opacity: 0.7;
+    }
+    article div .interacao-02 img:hover{
+        width: 30px;
+        opacity: 0.7;
+    }
 }
-@media (min-width:1024px), (max-width:1200px){
+
+
+
+
+
+
+
+/***************tamanho tela pc*******************/
+@media (min-width:821px){
 body{
     width: 100%;
     height: 100%;
 }
+.logo-area{
+    display: none;
+    width: 100%;
+    height: 55px;;
+}
+.logo{
+    display: none;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+}
+.b{
+    display: none;
+    position: fixed;
+    right: 40px;
+    top: 0;
+    width: 200px;
+    height: 55px;
+}
 section ul{
     height: 100px;
     width: 78%;
-    padding-left: 120px;
+    padding-left: 0px;
     display: flex;
     text-decoration: none;
     list-style: none;
@@ -41,7 +370,6 @@ section ul h1{
     font-size: 10px;
     text-align: center;
 }
-
 .status{
     display:flexbox;
     flex-direction: row;
@@ -86,13 +414,34 @@ nav ul li img:hover{
     padding: 5px; 
     margin: 6px 7px 6px 20px;
     object-fit: cover;
+}    .botao2{
+    width: 30px;
+    height: 30px;
+    padding: 5px; 
+    margin: 10px 7px 6px 20px;
+    object-fit: cover;
+}
+.botao3{
+    width: 30px;
+    height: 30px;
+    padding: 5px; 
+    margin: 10px 7px 6px 20px;
+    object-fit: cover;
+}
+.botao-perfil{
+    width: 30px;
+    height: 30px;
+    padding: 5px; 
+    margin: 10px 7px 6px 20px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .section{
     display: block;
     left: 40px;
     border-left: 2px solid black;
 }
-/**perfil**/
+/********perfil********/
 .conteudo{
     display: flex;
     flex-direction:row;
@@ -110,9 +459,9 @@ nav ul li img:hover{
     display: flex;
     flex-direction:row;
     width: 400px;
-    height: 80px;
+    height: 60px;
     font-size: 16px;
-    margin-left: 15px;
+    margin: 25px 0px 0px 10px;
 }
 .perfil1{
 width: 400px;
@@ -131,14 +480,15 @@ section div foto-perfil h1{
 }
 .perfil-1{
     width: 60px;
-    height: 60px;
+    height: 50px;
+    margin-left: 60px;
 
 }
 .perfil-2{
     display: flex;
     flex-direction: column;
     margin-left: 05px;
-    height: 60px;
+    height: 50px;
     justify-content: center;
     width: 223.24px;
 }
@@ -151,14 +501,14 @@ div .perfil-2 > p{
 }
 .perfil-3{
     display: block;
-    height: 60px;
+    height: 40px;
     text-align: right;
     justify-content: right;
     margin-top: 20px;
     margin-left: 10px;
     font-size:10px;
 }
-/***sugestões***/
+/********sugestões********/
 .sugestoes{
     display:flex;
     flex-direction: row;
@@ -171,7 +521,7 @@ div .perfil-2 > p{
     flex-direction: row;
     height: 20px;
     width: 260px;
-    margin-left: 15px;
+    margin-left: 55px;
 }
 .sugestoes-2{
     display:flex;
@@ -180,20 +530,26 @@ div .perfil-2 > p{
     width: 80px;
     /*margin-left: 15px;*/
 }
+.tipos-sugestoes{
+    width: 400px;
+    height: 330px;
+    margin-top: 20px;
+}
 .foto-perfil-1{
     align-items:self-end;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    margin: 0;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.306);
 }
 .sugestao-perfil{
-    height: 60px;
+    height: 50px;
     display: flex;
-    margin:10px 0px 10px 15px;
+    margin:6px 0px 0px 15px;
 }
-
-/***post***/
+/*******post********/
 .perfil-post{
     display: flex;
     width: 480px;
@@ -209,6 +565,8 @@ div .perfil-2 > p{
     border-radius: 50%;
     width: 45px;
     height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.306);
+
 }
 .conteudo-post{
     margin: 10px 0px 5px 0px;
@@ -249,8 +607,4 @@ article div .interacao-02 img:hover{
     width: 30px;
     opacity: 0.7;
 }
-
-
-
-
 }
